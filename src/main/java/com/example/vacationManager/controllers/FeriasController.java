@@ -1,6 +1,6 @@
 package com.example.vacationManager.controllers;
 
-import com.example.vacationManager.dto.FeriasDTO;
+import com.example.vacationManager.dto.FeriasAprovadaDTO;
 import com.example.vacationManager.services.FeriasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,10 +16,10 @@ public class FeriasController {
     private FeriasService feriasService;
 
     @GetMapping(value="/{id}")
-    public ResponseEntity<FeriasDTO> findById(@PathVariable Long id) {
-        FeriasDTO feriasDTO = feriasService.findById(id);
-        if(feriasDTO != null) {
-            return ResponseEntity.ok(feriasDTO);
+    public ResponseEntity<FeriasAprovadaDTO> findById(@PathVariable Long id) {
+        FeriasAprovadaDTO feriasAprovadaDTO = feriasService.findByIdFeriasAprovada(id);
+        if(feriasAprovadaDTO != null) {
+            return ResponseEntity.ok(feriasAprovadaDTO);
         } else {
             return ResponseEntity.notFound().build();
         }

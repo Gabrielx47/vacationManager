@@ -1,21 +1,22 @@
 package com.example.vacationManager.dto;
 
-import com.example.vacationManager.entities.Ferias;
-import com.example.vacationManager.projections.FeriasProjection;
+import com.example.vacationManager.projections.FeriasAprovadaProjection;
 import org.springframework.beans.BeanUtils;
 
 import java.time.LocalDate;
 
-public class FeriasDTO {
+public class FeriasAprovadaDTO {
     private Long id;
     private LocalDate inicio;
     private LocalDate fim;
     private String status;
+    private LocalDate dataDePagamento;
+    private Double valor;
 
-    public FeriasDTO() {
+    public FeriasAprovadaDTO() {
     }
 
-    public FeriasDTO(FeriasProjection entity) {
+    public FeriasAprovadaDTO(FeriasAprovadaProjection entity) {
         BeanUtils.copyProperties(entity, this);
     }
 
@@ -49,5 +50,21 @@ public class FeriasDTO {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public LocalDate getDataDePagamento() {
+        return dataDePagamento;
+    }
+
+    public void setDataDePagamento(LocalDate dataDePagamento) {
+        this.dataDePagamento = dataDePagamento;
+    }
+
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 }
