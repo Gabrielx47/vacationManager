@@ -12,6 +12,7 @@ public class FeriasAprovadaDTO {
     private String status;
     private LocalDate dataDePagamento;
     private Double valor;
+    private String nome;
 
     public FeriasAprovadaDTO() {
     }
@@ -66,5 +67,13 @@ public class FeriasAprovadaDTO {
 
     public void setValor(Double valor) {
         this.valor = valor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

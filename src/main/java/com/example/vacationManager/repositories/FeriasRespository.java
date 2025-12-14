@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface FeriasRespository extends JpaRepository<Ferias, Long> {
     @Query(nativeQuery = true, value = """
-        select f.id, f.inicio, f.fim, f.status, p.data as "dataDePagamento", p.valor 
+        select f.id, f.inicio, f.fim, f.status, p.data as "dataDePagamento", p.valor, s.nome 
         from FERIAS f
         inner join SERVIDOR s on s.id = f.servidor_id
         inner join PAGAMENTO p on p.servidor_id = s.id

@@ -9,4 +9,5 @@ public interface FeriasAprovadaProjection {
     String getStatus();
     LocalDate getDataDePagamento();
     Double getValor();
+    String getNome();
 }
