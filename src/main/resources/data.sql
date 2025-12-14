@@ -18,3 +18,7 @@ insert into FERIAS (id, inicio, fim, status, servidor_id) values (3, '2023-10-05
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (4, '2023-11-15', '2023-11-30', 'APROVADA', 4);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (5, '2023-12-01', '2023-12-10', 'EMANALISE', 5);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (6, '2024-01-05', '2024-01-20', 'APROVADA', 1);
+insert into FERIAS (id, inicio, fim, status, servidor_id) values (7, '2024-02-15', '2024-02-28', 'APROVADA', 2);
+insert into FERIAS (id, inicio, fim, status, servidor_id) values (8, '2024-03-10', '2024-03-20', 'EMANALISE', 3);
+insert into FERIAS (id, inicio, fim, status, servidor_id) values (9, '2024-04-05', '2024-04-15', 'REPROVADA', 4);
+insert into FERIAS (id, inicio, fim, status, servidor_id) values (10, '2024-05-20', '2024-05-30', 'APROVADA', 5);
