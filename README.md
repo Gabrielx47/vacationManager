@@ -1,5 +1,11 @@
 ## Vacation Manager
 
+> [!IMPORTANT]
+> **Versão 1.0 - Entrega de Processo Seletivo**
+> Este repositório foi iniciado como parte do desafio técnico para a SergipeTec. 
+> As implementações contidas na [Tag v1.0](https://github.com/Gabrielx47/vacationManager/commits/v1.0.0) correspondem exatamente ao que foi entregue na data da avaliação. 
+> Atualmente, o projeto segue em desenvolvimento para fins de estudo e melhoria de portfólio.
+
 O Vacation Manager é uma aplicação Spring Boot desenvolvida para gerenciar as férias de servidores públicos. Permite solicitar férias, aprovar ou reprovar solicitações, acompanhar o status e gerenciar pagamentos relacionados às férias.
 
 ## Sumário
