@@ -1,6 +1,7 @@
 package com.example.vacationManager.services;
 
 import com.example.vacationManager.dto.ServidorFeriasDTO;
+import com.example.vacationManager.entities.Servidor;
 import com.example.vacationManager.projections.ServidorFeriasProjection;
 import com.example.vacationManager.repositories.ServidorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,9 @@ public class ServidorService {
         } else {
             return null;
         }
+    }
+
+    public Long  createNewServidor(Servidor entity) {
+        return servidorRespository.save(entity).getId();
     }
 }

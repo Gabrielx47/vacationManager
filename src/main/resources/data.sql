@@ -4,6 +4,8 @@ insert into SERVIDOR (id, nome) values (3, 'Maria Santos');
 insert into SERVIDOR (id, nome) values (4, 'Pedro Oliveira');
 insert into SERVIDOR (id, nome) values (5, 'Ana Costa');
 
+alter sequence servidor_id_seq restart with 6;
+
 insert into PAGAMENTO (id, valor, data, servidor_id) values (1, 1500.00, '2023-01-15', 1);
 insert into PAGAMENTO (id, valor, data, servidor_id) values (2, 2000.00, '2023-02-10', 2);
 insert into PAGAMENTO (id, valor, data, servidor_id) values (3, 1800.00, '2023-03-05', 3);

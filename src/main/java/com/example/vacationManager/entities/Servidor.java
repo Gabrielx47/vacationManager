@@ -9,8 +9,9 @@ import java.util.Objects;
 @Table(name = "SERVIDOR")
 public class Servidor {
     @Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "servidor_id_gen")
+    @SequenceGenerator(name = "servidor_id_gen", sequenceName = "servidor_id_seq", initialValue = 1, allocationSize = 1)
+    private Long id;
     @Column
     private String nome;
     @OneToMany(mappedBy = "servidor", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -19,6 +20,11 @@ public class Servidor {
     private Collection<Pagamento> pagamentos;
 
     public Servidor() {
+    }
+
+    public Servidor(Long id, String nome) {
+        this.id = id;
+        this.nome = nome;
     }
 
     public Servidor(long id, String nome, Collection<Ferias> ferias, Collection<Pagamento> pagamentos) {
