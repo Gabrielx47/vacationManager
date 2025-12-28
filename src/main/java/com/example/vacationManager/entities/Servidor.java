@@ -22,6 +22,10 @@ public class Servidor {
     public Servidor() {
     }
 
+    public Servidor(Long id) {
+        this.id = id;
+    }
+
     public Servidor(Long id, String nome) {
         this.id = id;
         this.nome = nome;

@@ -19,6 +19,8 @@ insert into PAGAMENTO (id, valor, data, servidor_id) values (10, 1950.00, '2024-
 insert into PAGAMENTO (id, valor, data, servidor_id) values (11, 2400.00, '2024-05-25', 4);
 insert into PAGAMENTO (id, valor, data, servidor_id) values (12, 1750.00, '2024-08-20', 5);
 
+alter sequence pagamento_id_seq restart with 13;
+
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (1, '2023-08-01', '2023-08-15', 'APROVADA', 1);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (2, '2023-09-10', '2023-09-20', 'EMANALISE', 1);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (3, '2023-10-05', '2023-10-12', 'REPROVADA', 1);

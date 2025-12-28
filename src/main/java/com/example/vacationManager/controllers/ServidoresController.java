@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping(value = "/servidores")
 public class ServidoresController {
     @Autowired
-    ServidorService servidorService;
+    private ServidorService servidorService;
 
     @GetMapping("/{id}/ferias")
     public ResponseEntity<List<ServidorFeriasDTO>> findAllServidorFerias(@PathVariable Long id) {

@@ -9,7 +9,9 @@ import java.util.Objects;
 @Table(name = "PAGAMENTO")
 public class Pagamento {
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pagamento_id_gen")
+    @SequenceGenerator(name = "pagamento_id_gen", sequenceName = "pagamento_id_seq", initialValue = 1, allocationSize = 1)
+    private Long id;
     private double valor;
     private LocalDate data;
     @ManyToOne
@@ -18,7 +20,7 @@ public class Pagamento {
     public Pagamento() {
     }
 
-    public Pagamento(long id, Double valor, LocalDate data, Servidor servidor) {
+    public Pagamento(Long id, Double valor, LocalDate data, Servidor servidor) {
         this.id = id;
         this.valor = valor;
         this.data = data;
