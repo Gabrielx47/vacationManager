@@ -36,3 +36,5 @@ insert into FERIAS (id, inicio, fim, status, servidor_id) values (12, '2024-07-0
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (13, '2024-08-15', '2024-08-25', 'APROVADA', 5);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (14, '2024-09-05', '2024-09-15', 'EMANALISE', 5);
 insert into FERIAS (id, inicio, fim, status, servidor_id) values (15, '2024-10-10', '2024-10-20', 'REPROVADA', 5);
+
+alter sequence ferias_id_seq restart with 16;

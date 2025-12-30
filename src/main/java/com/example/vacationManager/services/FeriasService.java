@@ -1,6 +1,7 @@
 package com.example.vacationManager.services;
 
 import com.example.vacationManager.dto.FeriasAprovadaDTO;
+import com.example.vacationManager.entities.Ferias;
 import com.example.vacationManager.projections.FeriasAprovadaProjection;
 import com.example.vacationManager.repositories.FeriasRespository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +19,9 @@ public class FeriasService {
         } else {
             return new FeriasAprovadaDTO(result);
         }
+    }
+
+    public Long createNewFerias(Ferias entity) {
+        return feriasRepository.save(entity).getId();
     }
 };

@@ -9,8 +9,9 @@ import java.util.Objects;
 @Table(name="FERIAS")
 public class Ferias {
     @Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ferias_id_gen")
+    @SequenceGenerator(name = "ferias_id_gen", sequenceName = "ferias_id_seq", initialValue = 1, allocationSize = 1)
+    private Long id;
     private LocalDate inicio;
     private LocalDate fim;
     @Enumerated(EnumType.STRING)
@@ -21,7 +22,7 @@ public class Ferias {
     public Ferias() {
     }
 
-    public Ferias(long id, LocalDate inicio, LocalDate fim, Status status, Servidor servidor) {
+    public Ferias(Long id, LocalDate inicio, LocalDate fim, Status status, Servidor servidor) {
         this.id = id;
         this.inicio = inicio;
         this.fim = fim;
@@ -33,7 +34,7 @@ public class Ferias {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
