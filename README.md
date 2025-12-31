@@ -57,8 +57,17 @@ A API do Vacation Manager oferece os seguintes endpoints:
 ### Ferias
 - **GET** `/ferias/{id}`: Retorna as informações das férias aprovadas para o ID especificado.
 
+- **POST** `/ferias`: Cadastra uma solicitação de férias. 
+
 ### Servidores
 - **GET** `/servidores/{id}/ferias`: Retorna a lista de férias associadas ao servidor com o ID especificado.
+
+- **POST** `/servidores`: Cadastra um servidor no sistema.
+
+### Pagamentos
+- **GET** `/pagamentos`: Retorna todos os pagamentos de formada paginada.
+
+- **POST** `/pagamentos`: Cadastra um pagamento no sistema.
 
 ## Protótipos de Baixa Fidelidade
 Abaixo é apresentado os protótipos das telas que ilustram o funcionamento do sistema:
