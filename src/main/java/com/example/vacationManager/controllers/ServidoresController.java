@@ -4,6 +4,7 @@ import com.example.vacationManager.dto.ServidorFeriasDTO;
 import com.example.vacationManager.entities.Servidor;
 import com.example.vacationManager.services.ServidorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -18,8 +19,10 @@ public class ServidoresController {
     private ServidorService servidorService;
 
     @GetMapping("/{id}/ferias")
-    public ResponseEntity<List<ServidorFeriasDTO>> findAllServidorFerias(@PathVariable Long id) {
-        List<ServidorFeriasDTO> result = servidorService.findAllServidorFerias(id);
+    public ResponseEntity<List<ServidorFeriasDTO>> findAllServidorFerias(@PathVariable Long id,
+                                                                        @RequestParam(defaultValue = "0") int pageNumber,
+                                                                        @RequestParam(defaultValue = "3") int pageSize) {
+        List<ServidorFeriasDTO> result = servidorService.findAllServidorFerias(id, PageRequest.of(pageNumber, pageSize));
         if(result.isEmpty()) {
             return ResponseEntity.notFound().build();
         } else {
