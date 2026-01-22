@@ -18,10 +18,10 @@ O Vacation Manager é uma aplicação Spring Boot desenvolvida para gerenciar as
 ## Modelo de Dados
 
 ### Modelo Conceitual
-   ![Modelo Conceitual](/assets/modelagem_conceitual.png)
+   ![Modelo Conceitual](/docs/assets/modelagem_conceitual.png)
 
 ### Modelo Lógico
-   ![Modelo Lógico](/assets/modelo_logico.png)
+   ![Modelo Lógico](/docs/assets/modelo_logico.png)
 
 O sistema Vacation Manager utiliza as seguintes entidades principais:
 
@@ -71,7 +71,7 @@ A API do Vacation Manager oferece os seguintes endpoints:
 
 ## Protótipos de Baixa Fidelidade
 Abaixo é apresentado os protótipos das telas que ilustram o funcionamento do sistema:
-   ![low fidelity prototipe](/assets/low_fidelity_prototype%20-%20vacation_manager.png)
+   ![low fidelity prototipe](/docs/assets/low_fidelity_prototype%20-%20vacation_manager.png)
 ## Instruções para Executar a API com Docker Compose
 
 Para executar a API utilizando Docker Compose, siga os passos abaixo:
