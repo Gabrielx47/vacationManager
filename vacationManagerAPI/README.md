@@ -1,11 +1,5 @@
 ## Vacation Manager
 
-> [!IMPORTANT]
-> **Versão 1.0 - Entrega de Processo Seletivo**
-> Este repositório foi iniciado como parte do desafio técnico para a SergipeTec. 
-> As implementações contidas na [Tag v1.0](https://github.com/Gabrielx47/vacationManager/commits/v1.0.0) correspondem exatamente ao que foi entregue na data da avaliação. 
-> Atualmente, o projeto segue em desenvolvimento para fins de estudo e melhoria de portfólio.
-
 O Vacation Manager API é uma aplicação Spring Boot desenvolvida para gerenciar as férias de servidores públicos. Permite solicitar férias, aprovar ou reprovar solicitações, acompanhar o status e gerenciar pagamentos relacionados às férias.
 
 ## Sumário
@@ -18,10 +12,10 @@ O Vacation Manager API é uma aplicação Spring Boot desenvolvida para gerencia
 ## Modelo de Dados
 
 ### Modelo Conceitual
-   ![Modelo Conceitual](/docs/assets/modelagem_conceitual.png)
+   ![Modelo Conceitual](./docs/assets/modelagem_conceitual.png)
 
 ### Modelo Lógico
-   ![Modelo Lógico](/docs/assets/modelo_logico.png)
+   ![Modelo Lógico](./docs/assets/modelo_logico.png)
 
 O sistema Vacation Manager utiliza as seguintes entidades principais:
 
@@ -71,7 +65,7 @@ A API do Vacation Manager oferece os seguintes endpoints:
 
 ## Protótipos de Baixa Fidelidade
 Abaixo é apresentado os protótipos das telas que ilustram o funcionamento do sistema:
-   ![low fidelity prototipe](/docs/assets/low_fidelity_prototype%20-%20vacation_manager.png)
+   ![low fidelity prototipe](./docs/assets/low_fidelity_prototype%20-%20vacation_manager.png)
 ## Instruções para Executar a API com Docker Compose
 
 Para executar a API utilizando Docker Compose, siga os passos abaixo:
