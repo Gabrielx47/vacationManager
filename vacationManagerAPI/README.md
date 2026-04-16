@@ -12,10 +12,10 @@ O Vacation Manager API é uma aplicação Spring Boot desenvolvida para gerencia
 ## Modelo de Dados
 
 ### Modelo Conceitual
-   ![Modelo Conceitual](./docs/assets/modelagem_conceitual.png)
+   ![Modelo Conceitual](../docs/assets/modelagem_conceitual.png)
 
 ### Modelo Lógico
-   ![Modelo Lógico](./docs/assets/modelo_logico.png)
+   ![Modelo Lógico](../docs/assets/modelo_logico.png)
 
 O sistema Vacation Manager utiliza as seguintes entidades principais:
 
