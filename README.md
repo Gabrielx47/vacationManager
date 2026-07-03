@@ -12,10 +12,10 @@ O Vacation Manager é uma aplicação desenvolvida para gerenciar as férias de 
 ## Modelo de Dados
 
 ### Modelo Conceitual
-   ![Modelo Conceitual](../docs/assets/conceptual_model.png)
+   ![Modelo Conceitual](./docs/assets/conceptual_model.png)
 
 ### Modelo Lógico
-   ![Modelo Lógico](../docs/assets/logical_model.png)
+   ![Modelo Lógico](./docs/assets/logical_model.png)
 
 O sistema Vacation Manager utiliza as seguintes entidades principais:
 
